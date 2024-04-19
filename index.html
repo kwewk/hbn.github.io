@@ -8,59 +8,71 @@
         body {
             margin: 0;
             padding: 0;
-            background: url('background.img/congratulation.jpg') no-repeat center center fixed;
-            background-size: cover;
-            background-position: center;
+            position: relative;
             height: 100%;
+        }
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
         }
         .image-container {
             position: absolute;
-            top: 33%;
+            margin-top: 17%;
             left: 30%;
             transform: translate(-50%, -50%);
         }
         .image-container2 {
             position: absolute;
-            top: 36%;
+            margin-top: 18%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
         .image-container3 {
             position: absolute;
-            top: 36%;
+            margin-top: 18%;
             left: 74%;
             transform: translate(-50%, -50%);
         } 
         .image-container4 {
             position: absolute;
-            top: 73%;
+            margin-top: 35%;
             left: 40%;
             transform: translate(-50%, -50%);
         } 
         .image-container5 {
             position: absolute;
-            top: 73%;
+            margin-top: 35%;
             left: 61%;
             transform: translate(-50%, -50%);
         } 
     </style>
 </head>
 <body>
-    
-    <div class="image-container">
-        <a href="pgwtcts.html"><img src="cats.img/cat2.jpg" alt="Кот" width="130" vspace="5" hspace="5"></a>
-    </div>
-    <div class="image-container2">
-        <a href="pgwtmmcngrts.html"><img src="congratulations.img/congrats3.jpg" alt="Поздравления" width="120" vspace="5" hspace="5"></a>
-    </div>
-    <div class="image-container3">
-        <a href="pgwtourmmnts.html"><img src="ourmoments.img/itt1.jpg" alt="Моменты" width="120" vspace="5" hspace="5"></a>
-    </div>
-    <div class="image-container4">
-        <a href="pgwtmeme.html"><img src="secret.img/secret.jpg" alt="Мем" width="120" vspace="5" hspace="5"></a>
-    </div>
-    <div class="image-container5">
-        <a href="mywords.html"><img src="secret.img/secret2.jpg" alt="Отсебятина" width="120" vspace="5" hspace="5"></a>
+    <img class="background-image" src="background.img/congratulation.jpg" alt="Background">
+    <div class="content">
+        <div class="image-container">
+            <a href="pgwtcts.html"><img src="cats.img/cat2.jpg" alt="Кот" width="130" vspace="5" hspace="5"></a>
+        </div>
+        <div class="image-container2">
+            <a href="pgwtmmcngrts.html"><img src="congratulations.img/congrats3.jpg" alt="Поздравления" width="120" vspace="5" hspace="5"></a>
+        </div>
+        <div class="image-container3">
+            <a href="pgwtourmmnts.html"><img src="ourmoments.img/itt1.jpg" alt="Моменты" width="120" vspace="5" hspace="5"></a>
+        </div>
+        <div class="image-container4">
+            <a href="pgwtmeme.html"><img src="secret.img/secret.jpg" alt="Мем" width="120" vspace="5" hspace="5"></a>
+        </div>
+        <div class="image-container5">
+            <a href="mywords.html"><img src="secret.img/secret2.jpg" alt="Отсебятина" width="120" vspace="5" hspace="5"></a>
+        </div>
     </div>
 </body>
 </html>
