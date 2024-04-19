@@ -6,28 +6,41 @@
     <link rel="stylesheet" href="style1.css">
     <title>Котеки</title>
     <style>
-    body{
+    body {
             margin: 0;
             padding: 0;
-            background: url('background.img/eh.jpg') no-repeat center center fixed;
-            background-size: cover;
-            background-position: center;
-            height: 0px;
+            position: relative;
+            height: 100%;
+        }
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
         }
     </style>
 </head>
 <body>
-    <li>
-        <h2>Здесь я решил вставить милых котиков, которые обязательно должны умилить тебя (так задумано) и последняя пикча мемная, вот</h2>
-        <p>
-            <img src = "cats.img/cat2.jpg" alt="Фотография 1" width="160" height="160">
-            <img src = "cats.img/cat3.jpg" alt="Фотография 2" width="160" height="160">
-            <img src = "cats.img/cat7.jpg" alt="Фотография 3" width="160" height="160">
-            <img src = "cats.img/cat9.jpg" alt="Фотография 4" width="160" height="160">
-            <img src = "cats.img/cat10.jpg" alt="Фотография 5" width="160" height="160">
-        </p>
-        <img src = "cats.img/cat11.jpg" alt="Фотография 6" width="450" height="450">
-    </li>
+    <img class="background-image" src="./background.img/congratulation.jpg" alt="Background">
+    <div class="content">
+        <li>
+            <h2>Здесь я решил вставить милых котиков, которые обязательно должны умилить тебя (так задумано) и последняя пикча мемная, вот</h2>
+            <p>
+                <img src = "cats.img/cat2.jpg" alt="Фотография 1" width="160" height="160">
+                <img src = "cats.img/cat3.jpg" alt="Фотография 2" width="160" height="160">
+                <img src = "cats.img/cat7.jpg" alt="Фотография 3" width="160" height="160">
+                <img src = "cats.img/cat9.jpg" alt="Фотография 4" width="160" height="160">
+                <img src = "cats.img/cat10.jpg" alt="Фотография 5" width="160" height="160">
+            </p>
+            <img src = "cats.img/cat11.jpg" alt="Фотография 6" width="450" height="450">
+        </li>
     <a href="index.html" class="button">Вернуться к Доске Поздравлений</a>
+    </div>
 </body>
 </html>
